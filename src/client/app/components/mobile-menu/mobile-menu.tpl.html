@@ -1,0 +1,59 @@
+<div class="mobile-menu">
+
+    <div class="burger">
+        <div class="icon-menu toggle-menu" ng-click="toggleOverlay()">
+    </div>
+
+
+    <div class="menu-overlay" ng-show="toggle">
+
+        <div class="overlay-close" ng-click="toggleOverlay()">
+           <div><img src="/img/img_toggle-close.png"></div>
+        </div>
+
+        <div class="content">
+
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-12 text-center logo">
+                        <img src="/img/aat_logo_invert.svg" width="80px">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <ul class="list-unstyled overlay-links" ng-click="toggleOverlay()">
+                    <li>
+                        <a href="#/dashboard">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#/news">News</a>
+                    </li>
+                    <li>
+                        <a href="#/contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#/about">About</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>

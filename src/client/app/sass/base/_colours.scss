@@ -1,0 +1,64 @@
+// Primary colours
+$aat-green: #00958f !default;
+$aat-grey: rgb(124,124,123);
+
+// Greyscale
+$grey-darker:            darken($aat-grey, 30%);
+$grey-dark:              darken($aat-grey, 20%);
+$grey:                   $aat-grey;
+$grey-light:             lighten($aat-grey, 20%);
+$grey-lighter:           lighten($aat-grey, 30%);
+$grey-lightest:          lighten($aat-grey, 45%);
+
+// Tints
+$aat-green-90: #18B25E;
+$aat-green-80: #32BA70;
+$aat-green-70: #4BC381;
+$aat-green-60: #65CB93;
+$aat-green-50: #7FD4A6;
+$aat-green-40: #98DCB7;
+$aat-green-30: #B2E5C9;
+$aat-green-20: #CBEDDA;
+$aat-green-10: #E5F6EC;
+
+// AAT Text colour
+$aat-text: #64696E;
+
+// Link colours
+$link-color: $aat-green;
+$link-hover-color: darken($link-color, 15%);
+$aat-cta:  #F28300; // Orange
+$aat-cta-border:  #d07100; // Orange - border/box shadow
+$aat-cta-hover:  #ff8c04; // Orange - hover/active
+
+
+
+//New frontpage custom colours
+$aat-cta:  #F28300; // Orange
+$aat-cta-border:  #d07100; // Orange - border/box shadow
+$aat-cta-hover:  #ff8c04; // Orange - hover/active
+
+
+// TESTING CLASSES
+
+
+.aat-green { background-color: $aat-green; }
+.aat-grey { background-color: $aat-grey; }
+
+.aat-green-90 { background-color: $aat-green-90; }
+.aat-green-80 { background-color: $aat-green-80; }
+.aat-green-70 { background-color: $aat-green-70; }
+.aat-green-60 { background-color: $aat-green-60; }
+.aat-green-50 { background-color: $aat-green-50; }
+.aat-green-40 { background-color: $aat-green-40; }
+.aat-green-30 { background-color: $aat-green-30; }
+.aat-green-20 { background-color: $aat-green-20; }
+.aat-green-10 { background-color: $aat-green-10; }
+
+
+.grey-darker { background-color: $grey-darker; }
+.grey-dark { background-color: $grey-dark; }
+.grey { background-color: $grey; }
+.grey-light { background-color: $grey-light; }
+.grey-lighter { background-color: $grey-lighter; }
+.grey-lightest {background-color: $grey-lightest}

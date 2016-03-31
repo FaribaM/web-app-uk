@@ -1,0 +1,44 @@
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.no-padding {
+  padding: 0; }
+
+.no-margin {
+  margin: 0; }
+
+a {
+  color: #00958f;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-property: color, border-color, background-color;
+  transition-property: color, border-color, background-color; }
+
+a:hover, a:focus {
+  color: #00958f;
+  text-decoration: none; }
+
+body {
+  font-family: "Trade Gothic W01 Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: rgba(28, 54, 83, 0.6);
+  -webkit-text-size-adjust: 100%; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+.section-padding {
+  padding: 120px 0; }
+

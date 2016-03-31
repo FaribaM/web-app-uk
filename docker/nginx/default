@@ -1,0 +1,15 @@
+server {
+
+	charset UTF-8;
+	sendfile off;
+	listen 80;
+	server_name localhost;
+
+	# Default HTML location
+  	location / {
+	 		root /var/www/nginx-default;
+	        try_files $uri $uri/ /index.html =404;
+
+  	}
+
+}

@@ -1,0 +1,38 @@
+// Add a padding class to a section to add padding not on section tag... _mR
+
+.module {
+  padding:50px;
+}
+
+section.navigation {
+  background: $aat-green;
+}
+
+section.navigation .logo {
+  padding: 15px; /*@todo  Create global margin size*/
+}
+
+.logo-top-bar {
+  padding: 0 1em;
+  margin-top: 2px;
+  .popover.in{
+    width: auto;
+  }
+}
+.popover{
+  min-width: 160px;
+}
+.popover-content {
+  padding: 0.5em;
+}
+.popover.bottom{
+  margin-left: -4em;
+  margin-top: 3px;
+  .arrow{
+    margin-left: 51px;
+  }
+}
+
+#page-wrapper {
+  margin-top: 50px;
+}

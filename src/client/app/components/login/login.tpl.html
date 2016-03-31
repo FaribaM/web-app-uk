@@ -1,0 +1,35 @@
+<!-- login.tpl.html -->
+<div class="page-content">
+    <section id="login">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <h3 id="page-title">Login</h3>
+
+                    <div ng-if="vm.authUser">
+                        <pre>{{ vm.authUser }}</pre>
+                    </div>
+
+                    <form ng-submit="vm.onSubmit()" name="vm.form" novalidate>
+                        <formly-form model="vm.model" fields="vm.fields" options="vm.options">
+
+                            <button type="submit" class="btn btn-primary submit-button" ng-disabled="vm.form.$invalid">
+                                Submit
+                            </button>
+
+                        </formly-form>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>

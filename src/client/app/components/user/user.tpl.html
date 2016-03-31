@@ -1,0 +1,66 @@
+<!-- Dashboard Section -->
+<div class="page-content">
+
+    <section class="dashboard-section" id="dashboard">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- welcome message -->
+                <div class="col-sm-12">
+
+                    <h1>Dashboard</h1>
+
+                    <pre>{{ vm.dashboard  }} {{ vm.userData }} </pre>
+
+                </div>
+
+                <!-- user data -->
+                <div ng-show="vm.user" class="row">
+
+                    <div class="col-md-8">
+
+                        <!-- panel -->
+                        <h2>News</h2>
+
+                        <div class="panel">
+
+                            <!-- latest news list directive goes here -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <!-- panel -->
+                        <h2>User Info</h2>
+
+                        <div class="panel">
+
+                            <!-- user info directive goes here -->
+
+                        </div>
+
+                        <!-- panel -->
+                        <h2>User Qual Progress</h2>
+
+                        <div class="panel">
+
+                            <!-- user progress goes here -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Dashboard Section -->
+
+</div>

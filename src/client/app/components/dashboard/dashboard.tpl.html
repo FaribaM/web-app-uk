@@ -1,0 +1,73 @@
+<!-- Dashboard Section -->
+<div class="page-content">
+
+    <section class="dashboard-section" id="dashboard">
+
+        <div class="container">
+            
+            <!-- Dashboard : Hero Items -->
+            <div ng-if="vm.dashboard" class="row">
+
+                <div class="col-sm-12">
+
+                    <h1>Dashboard</h1>
+
+                    <pre>
+                        {{ vm.dashboard  }}
+                        {{ vm.userData }}
+                    </pre>
+
+                </div>
+
+            </div>
+
+            <!-- Dashboard : content  -->
+            <div ng-if="vm.dashboard" class="row">
+
+                <div class="col-md-8">
+
+                    <!-- Items panel -->
+                    <h2>Your Items</h2>
+
+                    <bookmarks-user-list></bookmarks-user-list>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <!-- user panel -->
+                    <h2>User Info</h2>
+
+                    <div class="panel"></div>
+
+                    <!-- graphs panel -->
+                    <h2>User Qual Progress</h2>
+
+                    <div class="panel"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dashboard : content  -->
+            <div ng-if="!vm.dashboard" class="row">
+
+                <div class="col-sm-12 text-center">
+
+                    <!-- news panel -->
+                    <h2>Sorry</h2>
+
+                    <p>You appear to either be offline or have experienced a technical error</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- End Dashboard Section -->
+
+</div>
