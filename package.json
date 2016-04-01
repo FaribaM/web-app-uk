@@ -1,6 +1,11 @@
 {
-  "name": "AATSA",
+  "name": "AATUK",
   "version": "0.0.8",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:aat-labs/web-app-uk.git"
+  },
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "add-stream": "1.0.0",
