@@ -146,7 +146,7 @@ To now start this as a container, please run the following :
 
 So my example : 
 
-    docker run -itd -p 8001:80 -v /Users/markrushton/Sites/aat/web-app-sa/build:/var/www/nginx-default aat/web-app-uk
+    docker run -itd -p 8001:80 -v /Users/markrushton/Sites/aat/web-app-uk/build:/var/www/nginx-default aat/web-app-uk
 
 
 Check your docker machine IP : (dev is the name of the docker-machine env, your may be different i.e. default) 
