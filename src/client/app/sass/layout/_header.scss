@@ -2,14 +2,14 @@
 
   overflow: hidden;
 
+  #desktop-nav {
+    position: absolute;
+    left: 100px;
+  }
+
   #top-nav {
 
     padding-top: 6px;
-
-    .desktop-nav {
-      position: absolute;
-      left: 100px;
-    }
 
     .logo-top-bar {
       position: absolute;

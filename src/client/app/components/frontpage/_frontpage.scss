@@ -1,5 +1,18 @@
 #frontpage {
 
+  // Hero
+  .hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    background-image: url("/img/frontpage/hero-1.jpg");
+
+  }
+
   // Study with AAT
   .steps {
     & li {
@@ -9,6 +22,25 @@
     & span {
       font-size: 40px;
     }
+  }
+
+  // Career
+  .hello-career {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    background-image: url("/img/frontpage/campaign-goodbye-job-full.jpg");
+
+  }
+
+  // Skills
+  .skills {
+    background-color: #EEEEEE;
+
   }
 
 }
