@@ -1,0 +1,16 @@
+#frontpage {
+
+  // Study with AAT
+  .steps {
+    & li {
+      vertical-align: top;
+    }
+
+    & span {
+      font-size: 40px;
+    }
+  }
+
+}
+
+

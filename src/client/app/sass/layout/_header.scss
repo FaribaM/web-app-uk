@@ -1,11 +1,24 @@
+#header {
 
+  overflow: hidden;
 
+  #top-nav {
 
-.logo-top-bar {
-  padding: 0 1em;
-  margin-top: 2px;
-  .popover.in{
-    width: auto;
+    padding-top: 6px;
+
+    .desktop-nav {
+      position: absolute;
+      left: 100px;
+    }
+
+    .logo-top-bar {
+      position: absolute;
+      left: 20px;
+    }
+
   }
+
 }
+
+
 
