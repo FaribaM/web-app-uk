@@ -1,0 +1,11 @@
+#
+# Nginx webserver for the web apps (js)
+#
+custom_nginx:
+    env_file: ./.env
+    build: ./
+    ports:
+        - 8001:80
+    volumes:
+        - ./build:/var/www/nginx-default
+
