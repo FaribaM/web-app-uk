@@ -1,0 +1,260 @@
+/**
+ * @file _variables.scss
+ *
+ * This file contains variables and helper style definitions which should
+ * be available for use in all referenced partials and
+ * for use throughout the AAT stylesheets. It's overrriding the
+ * _variables.scss of the core bootstrap.
+ 
+// ===================
+// == Font Families ==
+// ===================
+
+$base-font-family:      Arial, Helvetica, sans-serif;
+$heading-font-family:   'Trade Gothic W01', Arial, Helvetica, sans-serif;
+
+// ===================
+// ====Font Sizes=====
+// ===================
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-medium:        ceil(($font-size-base * 1.15)) !default; // ~16px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+// Heading font sizes
+$font-size-h1:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h2:            floor(($font-size-base * 1.8)) !default; // ~25px
+$font-size-h3:            ceil(($font-size-base * 1.6)) !default; // ~22px
+$font-size-h4:            floor(($font-size-base * 1.15)) !default; // ~16px
+$font-size-h5:            $font-size-base !default;                // 14px
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+// =======================================================
+// ==  Grid systems Define your custom responsive grid. ==
+// =======================================================
+
+$grid-vertical: $grid-gutter-width / 2;
+$grid-float-breakpoint:     $screen-sm-min;
+
+//Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+// =====================================
+// == Definding and colour variables. ==
+// =====================================
+
+// Legacy
+$darkgrey: #333;
+$lightgrey: #dcdcdc;
+
+// Primary colours
+$aat-green: #00AB4E;
+$aat-grey: rgb(124,124,123);
+
+//AAT text color
+$aat-text: #64696E; //Shade of Gray
+
+// Secondary colours - 2014 NEW
+$aat-blue: #0097DE;
+$aat-teal: #007C81;
+$aat-turq: #00BB9D;
+$aat-yellow: #FFC723;
+$aat-mauve: #880060;
+
+// Tints of Secondary colours - 2016
+$aat-blue-light: lighten($aat-blue, 20%); //#45c4ff
+$aat-blue-dark: darken($aat-blue, 20%); //#0074ab
+$aat-teal-light: lighten($aat-teal, 10%); //#00adb4
+$aat-teal-dark: darken($aat-teal, 10%); //#004b4e
+$aat-turq-light: lighten($aat-turq, 20%); //#22ffdc
+$aat-turq-dark: darken($aat-turq, 15%); //#006f5d
+$aat-yellow-light: lighten($aat-yellow, 10%); //#ffd456
+$aat-yellow-dark: darken($aat-yellow, 10%); //#efb200
+$aat-mauve-light: lighten($aat-mauve, 10%); //#bb0084
+$aat-mauve-dark: darken($aat-mauve, 10%); //#55003c
+
+// Secondary colours -  PRINT OLD
+$aat-duckegg: #82cec1;
+$aat-aqua: #00b7de;
+$aat-violet: #672f87;
+$aat-mustard: #ffc222;
+$aat-berry: #d15980;
+
+// Aqua shades
+$aat-aqua-50: #97E1F1; //Aqua
+
+// Utility colours
+$aat-default: #2a2a2a; // Black
+$aat-option:  #999; // Grey
+$aat-success: #00ab4e; // Green
+$aat-warning: #F28300; // Amber
+$aat-danger:  #EB5050; // Red
+$aat-danger-1:  #ff0044; // Red
+$aat-cta:  #F28300; // Orange
+$aat-cta-border:  #d07100; // Orange - border/box shadow
+$aat-cta-hover:  #ff8c04; // Orange - hover/active
+
+//New frontpage custom colours
+$aat-cta:  #F28300; // Orange
+$aat-cta-border:  #d07100; // Orange - border/box shadow
+$aat-cta-hover:  #ff8c04; // Orange - hover/active
+
+//Transtional widget AQR24 - custom colours
+$aat-tw: $aat-turq;
+$aat-tw-border: $aat-teal; // border/box shadow
+$aat-tw-hover:  $aat-teal; // hover/active
+
+// Greyscale
+$gray-darker:            darken($aat-grey, 30%);
+$gray-dark:              darken($aat-grey, 20%);
+$gray:                   $aat-grey;
+$gray-light:             lighten($aat-grey, 20%);
+$gray-lighter:           lighten($aat-grey, 30%);
+$gray-lightest:          lighten($aat-grey, 45%);
+
+// Custom greys
+$gray-xxlighter:           #f7f7f9;
+$aat-grey-lh-nav:          #d3d3d3;
+$aat-dark-grey-prim-nav:   #393939;
+$aat-dark-grey-prim-nav-1: #2b2b2b;
+$aat-accordion-bg:         #f5f5f5;
+
+// Tints
+$aat-green-90: #18B25E;
+$aat-green-80: #32BA70;
+$aat-green-70: #4BC381;
+$aat-green-60: #65CB93;
+$aat-green-50: #7FD4A6;
+$aat-green-40: #98DCB7;
+$aat-green-30: #B2E5C9;
+$aat-green-20: #CBEDDA;
+$aat-green-10: #E5F6EC;
+
+// Link colours
+$link-color: $aat-green;
+$link-hover-color: darken($link-color, 15%);
+
+// =====================================
+// ============== Panels. ==============
+// ===================================== 
+
+$panel-bg:                    #fff !default;
+$panel-aat-bg:                #f5f5f5 !default;
+$panel-body-padding:          15px !default;
+$panel-border-radius:         $border-radius-base;
+
+// ====================================
+// =========== pagination. ============
+// ====================================
+
+$pagination-color:                     $link-color !default;
+$pagination-bg:                        #fff !default;
+$pagination-border:                    #ddd !default;
+
+$pagination-hover-color:               $link-hover-color !default;
+$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-border:              #ddd !default;
+
+$pagination-active-color:              #fff;
+$pagination-active-bg:                 $aat-green;
+$pagination-active-border:             $aat-green;
+
+$pagination-disabled-color:            $gray-light !default;
+$pagination-disabled-bg:               #fff !default;
+$pagination-disabled-border:           #ddd !default;
+
+// ====================================
+// =========== Info cards. ============
+// ====================================
+
+$infocard-bg:                    #fff;
+$infocard-body-padding:          15px;
+$infocard-border-radius:         $border-radius-base;
+$infocard-default-border:        #ddd;
+
+// =====================================================================================
+//Form states and alerts.Define colors for form feedback states and, by default, alerts.
+// =====================================================================================
+
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+// ======================================================
+// Alerts.Define alert colors, border radius, and padding.
+// ======================================================
+
+$alert-padding:               15px !default;
+$alert-border-radius:         $border-radius-base !default;
+$alert-link-font-weight:      bold !default;
+
+$alert-success-bg:            $state-success-bg !default;
+$alert-success-text:          $state-success-text !default;
+$alert-success-border:        $state-success-border !default;
+
+$alert-info-bg:               $state-info-bg !default;
+$alert-info-text:             $state-info-text !default;
+$alert-info-border:           $state-info-border !default;
+
+$alert-warning-bg:            $state-warning-bg !default;
+$alert-warning-text:          $state-warning-text !default;
+$alert-warning-border:        $state-warning-border !default;
+
+$alert-danger-bg:             $state-danger-bg !default;
+$alert-danger-text:           $state-danger-text !default;
+$alert-danger-border:         $state-danger-border !default;
+
+// ===============================
+// == Background Colour classes ==
+// ===============================
+
+.aat-green { background-color: $aat-green; }
+.aat-grey { background-color: $aat-grey; }
+
+.aat-green-90 { background-color: $aat-green-90; }
+.aat-green-80 { background-color: $aat-green-80; }
+.aat-green-70 { background-color: $aat-green-70; }
+.aat-green-60 { background-color: $aat-green-60; }
+.aat-green-50 { background-color: $aat-green-50; }
+.aat-green-40 { background-color: $aat-green-40; }
+.aat-green-30 { background-color: $aat-green-30; }
+.aat-green-20 { background-color: $aat-green-20; }
+.aat-green-10 { background-color: $aat-green-10; }
+
+// Secondary colours -  PRINT OLD
+.aat-blue { background-color: $aat-blue; }
+.aat-teal { background-color: $aat-teal; }
+.aat-turq { background-color: $aat-turq; }
+.aat-yellow { background-color: $aat-yellow; }
+.aat-mauve { background-color: $aat-mauve; }
+
+.aat-duckegg { background-color: $aat-duckegg; }
+.aat-aqua { background-color: $aat-aqua; }
+.aat-violet { background-color: $aat-violet; }
+.aat-mustard { background-color: $aat-mustard; }
+.aat-berry { background-color: $aat-berry; }
+
+.gray-darker { background-color: $gray-darker; }
+.gray-dark { background-color: $gray-dark; }
+.gray { background-color: $gray; }
+.gray-light { background-color: $gray-light; }
+.gray-lighter { background-color: $gray-lighter; }
+.gray-lightest {background-color: $gray-lightest}
+
+.gray-xxlighter { background-color: $gray-xxlighter; }
+.aat-grey-lh-nav { background-color: $aat-grey-lh-nav; }
+.aat-dark-grey-prim-nav { background-color: $aat-dark-grey-prim-nav; }
+.aat-dark-grey-prim-nav-1 { background-color: $aat-dark-grey-prim-nav-1; }
